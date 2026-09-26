@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+
+Name: AndroidManifest.xml
+SHA-256-Digest: Ktq7zaR8zDvQy1ATnYy/G9qMG/zG1AYcN8w5+otwH7k=
+
+Name: assets/index.html
+SHA-256-Digest: 1JsW3QO9b41hAHy5sG+c9wRwNLduz5VEo4M7p6vduvc=
+
+Name: classes.dex
+SHA-256-Digest: B3lbk4PoQVej3TzML/1HeCyfdSSxco0jOPcM8TmZHXY=
+
+Name: res/drawable/ic_launcher.xml
+SHA-256-Digest: /+0Hi8kxgB1Ho1Ngg2FcWtKzYRuBNCI0Kwp62D5yRmE=
+
+Name: resources.arsc
+SHA-256-Digest: qQOw9he3GgOH0yN+yWAvqhRQhAqA5J9X91myAshdPWc=
+
