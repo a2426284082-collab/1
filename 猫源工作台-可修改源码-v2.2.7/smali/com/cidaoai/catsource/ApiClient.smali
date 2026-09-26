@@ -1008,17 +1008,21 @@
 
     add-double v0, v0, p8
 
-    const-wide/high16 v9, 0x4059000000000000L    # 100.0
-
-    mul-double/2addr v0, v9
-
     invoke-static {v0, v1}, Ljava/lang/Math;->round(D)J
 
     move-result-wide v0
 
-    long-to-double v0, v0
+    const-wide/16 v9, 0x19    # 25
 
-    div-double/2addr v0, v9
+    add-long/2addr v0, v9
+
+    const-wide/16 v9, 0x32    # 50
+
+    div-long/2addr v0, v9
+
+    mul-long/2addr v0, v9
+
+    long-to-double v0, v0
 
     invoke-virtual {v12, v6, v0, v1}, Lorg/json/JSONObject;->put(Ljava/lang/String;D)Lorg/json/JSONObject;
 
@@ -2944,17 +2948,21 @@
 
     add-double v11, v11, p5
 
-    const-wide/high16 v23, 0x4059000000000000L    # 100.0
-
-    mul-double v11, v11, v23
-
     invoke-static {v11, v12}, Ljava/lang/Math;->round(D)J
 
     move-result-wide v11
 
-    long-to-double v11, v11
+    const-wide/16 v23, 0x19    # 25
 
-    div-double v11, v11, v23
+    add-long v11, v11, v23
+
+    const-wide/16 v23, 0x32    # 50
+
+    div-long v11, v11, v23
+
+    mul-long v11, v11, v23
+
+    long-to-double v11, v11
 
     invoke-static {v11, v12}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
@@ -7602,15 +7610,21 @@
 
     add-double v10, v10, p7
 
-    mul-double/2addr v10, v8
-
     invoke-static {v10, v11}, Ljava/lang/Math;->round(D)J
 
     move-result-wide v10
 
-    long-to-double v10, v10
+    const-wide/16 v8, 0x19    # 25
 
-    div-double/2addr v10, v8
+    add-long/2addr v10, v8
+
+    const-wide/16 v8, 0x32    # 50
+
+    div-long/2addr v10, v8
+
+    mul-long/2addr v10, v8
+
+    long-to-double v10, v10
 
     invoke-static {v10, v11}, Ljava/lang/Double;->valueOf(D)Ljava/lang/Double;
 
